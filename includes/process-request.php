@@ -41,7 +41,7 @@ function wpgraphql_cors_response_headers( $headers ) {
         $headers['Access-Control-Allow-Origin'] = '*';
     } else {
         // Origin not found in allow list and must be authorized. Return first allowed orgin.        
-        $headers['Access-Control-Allow-Origin'] = $possible_origins[0];
+        // $headers['Access-Control-Allow-Origin'] = $possible_origins[0];
     }
 
     // If current request origin is allowed, allow credentials (cookies).
