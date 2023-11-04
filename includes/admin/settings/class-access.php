@@ -31,7 +31,7 @@ class Access extends Section {
                 'type'              => 'textarea',
                 'desc'              => __( 'Authorized domains requests can originate from. One domain per line. Be sure to include the protocol, like so: http://example.com', 'wp-graphql-cors' ),
                 'label'             => __( 'Extend "Access-Control-Allow-Origin” header', 'wp-graphql-cors' ),
-                'default'           => '*',
+                'default'           => '',
                 'sanitize_callback' => 'sanitize_textarea_field',
             ),
             array(
